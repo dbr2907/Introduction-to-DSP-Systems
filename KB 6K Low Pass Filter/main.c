@@ -70,7 +70,6 @@ void DataGet(void) {
     signal=(int)out;
     SSIDataPut(SSI0_BASE, signal);
     for (i=1;i<Q;i++){memoria[Q-i]=memoria[Q-1-i];}
-	SSIDataPut(SSI0_BASE, sample);
 }
 
 //************************************Main******************************************//
